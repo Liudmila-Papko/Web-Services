@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "9be22709-27b1-4b8b-bbe5-f6b17079f9f6",
+		"name": "HM2 Web Services 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25549320"
+	},
+	"item": [
+		{
+			"name": "check+",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://162.55.220.72:5031/"
+			},
+			"response": []
+		},
+		{
+			"name": "WS_1all_jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://162.55.220.72:5031/all_jobs"
+			},
+			"response": []
+		},
+		{
+			"name": "WS_2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://49.13.144.122:5032/get_all_jobs"
+			},
+			"response": []
+		},
+		{
+			"name": "WS_2get_jobs_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://49.13.144.122:5032/get_jobs_count"
+			},
+			"response": []
+		},
+		{
+			"name": "WS_1add_job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"firm_title\": \"Test 1\",\r\n\"position_title\": \"junior QA\",\r\n\"skills\": [\r\n    \"Postman\", \"SQL\", \"ABC\"\r\n    ],\r\n\"description\": \"job new\",\r\n\"Job Posting\": \"19 Dec, 2024\",\r\n\"Employee Status\": \"Full-time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "162.55.220.72:5031/add_job"
+			},
+			"response": []
+		},
+		{
+			"name": "WS_2add_job_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"firm_title\": \"Test 1\",\r\n\"position_title\": \"junior QA\",\r\n\"skills\": [\r\n    \"Postman\", \"SQL\", \"ABC\"\r\n    ],\r\n\"description\": \"job new\",\r\n\"Job Posting\": \"19 Dec, 2024\",\r\n\"Employee Status\": \"Full-time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "49.13.144.122:5032/add_job_item"
+			},
+			"response": []
+		}
+	]
+}
